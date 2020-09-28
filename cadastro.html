@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <meta name="description" content="Cadastro Professor">
+    <meta name="keywords" content="Cadastro">
+    <meta name="author" content="Deyvid Kalbiak, Rafael Figueiredo, Ronaldo,Victor Paulin">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+
+</head>
+<body>
+    <h3>Casdastro > Professor</h3>
+
+    <form method="GET" id="fCadstro"  action="">
+        <fieldset id="cadastro">
+            <Legend>
+                Identificação do Professor
+            </Legend>
+            <p><label for="cNome">Nome:</label> <input type="text"name="tNome" id="cNome"size="100" maxlength="150" placeholder="Nome Completo"></p>
+            <p><label for="cCpf">CPF</label> <input type="text" name="tCpf" id="cCpf" size="20"maxlength="40" pattern="\d{3}.\d{3}.\d{3}-\d{2}" placeholder="xxx.xxx.xxx-xx"> <button id="button">Verificar</button></p>
+            <p> <label for="cMail"> E-mail:</label> <input type="email" name="tMail" id="cMail" size="60"maxlenght="50" placeholder="Informe seu email"></p>
+            <p><label for="cApelido">Como quer ser chamado(a): </label><input type="text"name="tApelido" id="cApelido"size="50"maxlength="80"placeholder="Informe como quer ser chamado"></p>
+            <p><label for="cLog">Login </label><input type="text" name="tLog"id="cLog"size="50"maxlength="70"placeholder="Informe seu login"></p>
+            <p><label for="cSenha">Senha </label><input type="password" name="tSenha" id="cSenha"size="7"maxlength="9"placeholder="8 dígitos"></p>
+            <fieldset id="sexo">
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="masc" checked> <label for="masc">Masculino</label><br>
+                <input type="radio" name="sexo" id="fem" checked><label for="fem">Feminino</label>
+            </fieldset>
+            <p><label for="tDate"> Data de Nascimento </label><input type="date" name="date" id="tDate"></p>
+        </fieldset>
+
+        <fieldset id="endereco">
+            <legend>Endereço do Professor(a)</legend>
+            <p><label for="tRua">Logradouro </label><input type="text" name="cRua" id="cRua" size="60" maxlength="80" placeholder="Rua, Av, ..."></p>
+            <p><label for="cNumero">Numero </label><input type="number"name="cNumero"id="cNumero" min="0"max="99999"placeholder="0"></p>
+            <p><label for="cEstado">Estado </label>
+                <select name="tEst" id="cEst">
+                    <option>Selecione seu estado</option>
+                    <optgroup label="Rigião Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="RR">Roraima</option>
+                    <option value="AP">Amapá</option>
+                    <option value="PA">Pará</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="AC">Acre</option></optgroup>
+            
+                    <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piauí</option>
+                    <option value="CE">Ceará</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option></optgroup>
+            
+                    <optgroup label="Região Centro-Oeste">
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="GO">Goiás</option></optgroup>
+            
+                    <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option></optgroup>
+            
+                    <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul </option>
+                    <option value="SC">Santa Catarina</option></optgroup>
+                       </select>
+            </p>
+        </fieldset>
+
+
+    </form>
+<div>
+    <button>Finalizar Cadastro</button>
+</div>
+</body>
+</html>
